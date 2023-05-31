@@ -1,0 +1,21 @@
+/*<palette>
+  <color name="Eerie black" hex="1B2018" r="27" g="32" b="24" />
+  <color name="Sandy brown" hex="F7B073" r="247" g="176" b="115" />
+  <color name="Isabelline" hex="F0E7E2" r="240" g="231" b="226" />
+  <color name="Coyote" hex="75634F" r="117" g="99" b="79" />
+  <color name="Drab dark brown" hex="494131" r="73" g="65" b="49" />
+</palette>*/
+
+:root {
+    --color-eerieBlack: #1B2018;
+    --color-sandyBrown: #F7B073;
+    --color-isabelline: #F0E7E2;
+    --color-coyote: #75634F;
+    --color-drabDarkBrown: #494131;
+}
+
+/* to use dynamic value
+.element {
+    background: var(--color-eerieBlack);
+  }
+*/
