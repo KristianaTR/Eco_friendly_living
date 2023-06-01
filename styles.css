@@ -32,6 +32,7 @@
 
 body {
     margin: 0;
+    font-family: var(--font-family-accent);
 }
 
 #destinations,
@@ -54,31 +55,72 @@ body {
 }
 
 #tips img {
-    width: 250px;  
+    width: 240px;
+    position: absolute;
+    z-index: 0;
 }
 
 .imgDish {
-    position: absolute;
-    top: 15%;
+    top: 10%;
     left: 5%;
 }
 
 .imgBrush {
-    position: absolute;
-    left:40%;
-    top: 5%;
+    left:35%;
+    top: 25%;
 }
 
 .imgFood {
-    position: absolute;
-    left:70%;
+    left:75%;
     top: 20%;
 }
 
 .text {
+    color: var(--color-isabelline);
+    background-color: rgba(117, 99, 79, 0.6);
     width: 250px;
-    height: 400px;
-    background-color: var(--color-coyote);
+    height: 300px;
+    box-shadow: 5px 5px 10px var(--color-eerieBlack);
+    z-index: 1;
+    backdrop-filter: blur(2px);
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+
+}
+.text h1 {
+    font-family: var(--font-family-accent);
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text p {
+    font-family: var(--font-family-default);
+    font-weight: 60;
+    font-size: 0.8rem;
+    width: 200px;
+    text-align: justify;
+    margin: 10px auto;
+}
+
+.textDish {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.textBrush {
+    position: absolute;
+    top: 10%;
+    left: 47%;
+}
+
+.textFood {
+    position: absolute;
+    top: 45%;
+    left: 62%;
 }
 
 footer {
@@ -88,6 +130,10 @@ footer {
   background-color: var(--color-eerieBlack);
   justify-content: center;
   display: flex;
+}
+
+footer p {
+    margin: 0;
 }
 
 .footerWrapper {
