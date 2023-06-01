@@ -6,6 +6,7 @@
   <color name="Drab dark brown" hex="494131" r="73" g="65" b="49" />
 </palette>*/
 
+
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Rubik+Spray+Paint&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -14,6 +15,7 @@
     --color-isabelline: #F0E7E2;
     --color-coyote: #75634F;
     --color-drabDarkBrown: #494131;
+
 
     --font-family-default: 'Open Sans', sans-serif;
     --font-family-accent: Artemis;
@@ -36,3 +38,6 @@ body {
 /* HEADER STARTS HERE --> */
 
 /* HEADER ENDS HERE <-- */
+
+*/
+
