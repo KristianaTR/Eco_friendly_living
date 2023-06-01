@@ -6,7 +6,6 @@
   <color name="Drab dark brown" hex="494131" r="73" g="65" b="49" />
 </palette>*/
 
-
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Rubik+Spray+Paint&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
@@ -35,9 +34,135 @@ body {
     margin: 0;
 }
 
+#destinations,
+#tips {
+  height: 80vh;
+  width: 100%;
+  background-color: var(--color-isabelline);
+}
+
+#destinations {
+  background-image: url(https://images.pexels.com/photos/6861167/pexels-photo-6861167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tips {
+    display: flex;
+    position: relative;
+}
+
+#tips img {
+    width: 250px;  
+}
+
+.imgDish {
+    position: absolute;
+    top: 15%;
+    left: 5%;
+}
+
+.imgBrush {
+    position: absolute;
+    left:40%;
+    top: 5%;
+}
+
+.imgFood {
+    position: absolute;
+    left:70%;
+    top: 20%;
+}
+
+.text {
+    width: 250px;
+    height: 400px;
+    background-color: var(--color-coyote);
+}
+
+footer {
+  color: var(--color-isabelline);
+  height: 40vh;
+  width: 100%;
+  background-color: var(--color-eerieBlack);
+  justify-content: center;
+  display: flex;
+}
+
+.footerWrapper {
+    width: 80%;
+    height: 100%;
+    display: flex;
+
+}
+
+.footerNewslettersWrapper {
+    padding-top: 80px;
+    width: 40%;
+}
+
+.footerNewsletters {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    width: 40%;
+}
+
+.footerNewsletters input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid var(--color-coyote);
+    width: 80%;
+    height: 1.5rem;
+    margin-bottom: 20px;
+}
+.footerNewsletters input:focus-visible {
+    outline: none;
+    background: none;
+    border-bottom: 2px solid var(--color-sandyBrown);
+}
+
+.footerNavigation {
+    padding-top: 80px;
+    padding-left: 20px;
+    width: 15%;
+}
+.footerNavigation a {
+    text-decoration: none;
+    color: var(--color-isabelline);
+}
+.footerContacts {
+    padding-top: 80px;
+    padding-left: 20px;
+    width: 25%;
+}
+
+.footerContacts svg {
+    padding-right: 5px;
+}
+
+.footerWrapper h1 {
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+}
+
+.footerWrapper p {
+    padding-bottom: 10px;
+}
+
+.footerLogo {
+    display: flex;
+    width: 20%;
+    align-items: center;
+}
+
+.footerLogo img {
+    width: 150px;
+}
+
+
 /* HEADER STARTS HERE --> */
 
 /* HEADER ENDS HERE <-- */
-
-*/
 
