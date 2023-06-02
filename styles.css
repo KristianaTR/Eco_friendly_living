@@ -35,47 +35,89 @@ body {
     font-family: var(--font-family-accent);
 }
 
-#destinations,
-#tips {
+.section-destinations,
+.section-tips {
   height: 80vh;
   width: 100%;
   background-color: var(--color-isabelline);
 }
 
-#destinations {
-  background-image: url(https://images.pexels.com/photos/6861167/pexels-photo-6861167.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-  background-position: center bottom;
+.section-destinations {
+  background: url(/River.jpg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
 }
 
-#tips {
+.destinations-wrapper {
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.destinations-textbox {
+    width: 50%;
+    height: 100%;
+    color: var(--color-isabelline);
+    background-color: rgba(27, 32, 24, 0.6);
+    box-shadow: 5px 5px 20px black;
+}
+.destinations-textbox h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+.destinations-textbox p {
+    padding-top: 30px;
+    text-align: justify;
+    font-family: var(--font-family-default);
+    font-weight: 60;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.destinations-moto {
+    display: flex;
+    align-items: center;
+}
+
+.destinations-moto p {
+    font-size: xx-large;
+    color: var(--color-isabelline);
+    padding-left: 50px;
+}
+
+
+.section-tips {
     display: flex;
     position: relative;
+    background-image: radial-gradient(farthest-corner at 60% 55%, rgba(73, 65,49, 0) 70%, rgba(73, 65,49, 0.2));
 }
 
-#tips img {
+.section-tips img {
     width: 240px;
     position: absolute;
     z-index: 0;
+    box-shadow: 0px 0px 30px rgba(117, 99, 79, 0.2);
 }
 
-.imgDish {
+.img-dish {
     top: 10%;
     left: 5%;
 }
 
-.imgBrush {
+.img-brush {
     left:35%;
     top: 25%;
 }
 
-.imgFood {
-    left:75%;
-    top: 20%;
+.img-food {
+    right:8%;
+    top: 18%;
 }
 
-.text {
+.tips-text {
     color: var(--color-isabelline);
     background-color: rgba(117, 99, 79, 0.6);
     width: 250px;
@@ -89,14 +131,14 @@ body {
     vertical-align: middle;
 
 }
-.text h1 {
+.tips-text h1 {
     font-family: var(--font-family-accent);
     font-size: 1rem;
     text-align: center;
     padding-top: 20px;
 }
 
-.text p {
+.tips-text p {
     font-family: var(--font-family-default);
     font-weight: 60;
     font-size: 0.8rem;
@@ -105,22 +147,22 @@ body {
     margin: 10px auto;
 }
 
-.textDish {
+.text-dish {
     position: absolute;
     top: 40%;
-    left: 15%;
+    left: 17%;
 }
 
-.textBrush {
+.text-brush {
     position: absolute;
-    top: 10%;
+    top: 8%;
     left: 47%;
 }
 
-.textFood {
+.text-food {
     position: absolute;
-    top: 45%;
-    left: 62%;
+    top: 46%;
+    right: 20%;
 }
 
 footer {
@@ -136,26 +178,21 @@ footer p {
     margin: 0;
 }
 
-.footerWrapper {
+.footer-wrapper {
     width: 80%;
     height: 100%;
     display: flex;
 
 }
 
-.footerNewslettersWrapper {
-    padding-top: 80px;
-    width: 40%;
-}
-
-.footerNewsletters {
+.footer-newsletters {
     display: flex;
     flex-direction: column;
     padding-top: 80px;
     width: 40%;
 }
 
-.footerNewsletters input {
+.footer-newsletters input {
     border: none;
     background: none;
     border-bottom: 1px solid var(--color-coyote);
@@ -163,47 +200,49 @@ footer p {
     height: 1.5rem;
     margin-bottom: 20px;
 }
-.footerNewsletters input:focus-visible {
+.footer-newsletters input:focus-visible {
     outline: none;
     background: none;
     border-bottom: 2px solid var(--color-sandyBrown);
 }
 
-.footerNavigation {
+.footer-navigation {
     padding-top: 80px;
     padding-left: 20px;
     width: 15%;
 }
-.footerNavigation a {
+.footer-navigation a {
     text-decoration: none;
     color: var(--color-isabelline);
 }
-.footerContacts {
+.footer-contacts {
     padding-top: 80px;
     padding-left: 20px;
     width: 25%;
 }
 
-.footerContacts svg {
+.footer-contacts svg {
     padding-right: 5px;
 }
 
-.footerWrapper h1 {
+.footer-wrapper h1 {
     font-size: 1.4rem;
     padding-bottom: 15px;
 }
 
-.footerWrapper p {
+.footer-wrapper p {
+    font-family: var(--font-family-default);
+    font-weight: 60;
     padding-bottom: 10px;
 }
 
-.footerLogo {
+.footer-logo {
     display: flex;
     width: 20%;
     align-items: center;
 }
 
-.footerLogo img {
+.footer-logo img {
     width: 150px;
 }
 
