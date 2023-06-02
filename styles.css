@@ -38,6 +38,7 @@ body {
 .section-destinations,
 .section-tips {
   height: 80vh;
+  min-height: 680px;
   width: 100%;
   background-color: var(--color-isabelline);
 }
@@ -73,19 +74,20 @@ body {
     text-align: justify;
     font-family: var(--font-family-default);
     font-weight: 60;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .destinations-moto {
     display: flex;
     align-items: center;
+    padding-left: 50px;
 }
 
 .destinations-moto p {
     font-size: xx-large;
     color: var(--color-isabelline);
-    padding-left: 50px;
+    
 }
 
 
@@ -122,7 +124,7 @@ body {
     background-color: rgba(117, 99, 79, 0.6);
     width: 250px;
     height: 300px;
-    box-shadow: 5px 5px 10px var(--color-eerieBlack);
+    box-shadow: 5px 5px 15px var(--color-eerieBlack);
     z-index: 1;
     backdrop-filter: blur(2px);
     align-content: center;
@@ -155,13 +157,13 @@ body {
 
 .text-brush {
     position: absolute;
-    top: 8%;
+    top: 6%;
     left: 47%;
 }
 
 .text-food {
     position: absolute;
-    top: 46%;
+    top: 47%;
     right: 20%;
 }
 
@@ -182,14 +184,13 @@ footer p {
     width: 80%;
     height: 100%;
     display: flex;
-
 }
 
 .footer-newsletters {
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
     width: 40%;
+    padding-top: 60px;
 }
 
 .footer-newsletters input {
@@ -207,18 +208,18 @@ footer p {
 }
 
 .footer-navigation {
-    padding-top: 80px;
-    padding-left: 20px;
+    padding-left: 3%;
     width: 15%;
+    padding-top: 60px;
 }
 .footer-navigation a {
     text-decoration: none;
     color: var(--color-isabelline);
 }
 .footer-contacts {
-    padding-top: 80px;
-    padding-left: 20px;
+    padding-left: 3%;
     width: 25%;
+    padding-top: 60px;
 }
 
 .footer-contacts svg {
@@ -245,6 +246,93 @@ footer p {
 .footer-logo img {
     width: 150px;
 }
+
+@media only screen and (max-width: 720px) {
+    .section-destinations {
+        height: 100%;
+    }
+
+    .destinations-wrapper {
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+    }
+
+    .destinations-textbox {
+        width: 80%;
+        margin-bottom: 40px;
+    }
+    .destinations-moto {
+        width: 80%;
+        padding-left: 0;
+    }
+
+    .section-tips {
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        height: 100%;
+    }
+    .section-tips img {
+        width: 240px;
+        position: static;
+        box-shadow: 0px 0px 30px rgba(117, 99, 79, 0.2);
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .text-dish, .text-brush, .text-food {
+        position: static;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .footer-wrapper {
+      flex-direction: column;
+    }
+    .footer-wrapper h1 {
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    .footer-wrapper p {
+        font-size: 0.8rem;
+        font-weight: 60;
+        padding-bottom: 5px;
+    }
+    .footer-newsletters {
+        width: 100%;
+    }
+    .footer-newsletters label {
+        font-size: 0.8rem;
+    }
+    .footer-newsletters input {
+        width: 100%;
+    }
+
+    .footer-navigation {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .footer-contacts {
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .footer-logo {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+  }
 
 
 /* HEADER STARTS HERE --> */
