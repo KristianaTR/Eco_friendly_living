@@ -7,7 +7,7 @@
 </palette>*/
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700&family=Rubik+Spray+Paint&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:wght@200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700&family=Rubik+Spray+Paint&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 :root {
     --color-eerieBlack: #1B2018;
     --color-sandyBrown: #F7B073;
@@ -15,9 +15,8 @@
     --color-coyote: #75634F;
     --color-drabDarkBrown: #494131;
 
-
     --font-family-default: 'Open Sans', sans-serif;
-    --font-family-accent: 'Josefin Sans';
+    --font-family-accent: 'Josefin Sans', sans-serif;
 
     --max-width-desktop: 1920px;
     --max-width-tablet: 1024px;
@@ -339,6 +338,187 @@ footer {
 
 
 /* HEADER STARTS HERE --> */
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    /* background: var(--color-drabDarkBrown); */
+}
+
+.top-menu {
+    max-width: var(--max-width-desktop);
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+}
+
+.top-menu .logo {
+    /* height: 50px; */
+    width: 150px;
+}
+
+.top-menu nav a {
+    font-family: var(--font-family-accent);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--color-sandyBrown);
+    padding: 10px;
+    font-size: 1.8rem;
+}
+
+.top-menu nav a:hover,
+.top-menu nav a:active {
+    color: var(--color-sandyBrown);
+}
 
 /* HEADER ENDS HERE <-- */
 
+section {
+    height: 80vh;
+    box-sizing: border-box;
+    max-width: var(--max-width-desktop);
+}
+
+/* section:nth-child(even) {
+    background-color: var(--color-isabelline);
+} */
+
+/* SECTION HOME STARTS HERE --> */
+.section-home {
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.section-home__video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    /* position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; */
+    z-index: -1;
+}
+
+.section-home__content {
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50vw;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 50vh;
+    text-align: center;
+}
+
+.section-home__content p {
+    font-family: var(--font-family-accent);
+    color: var(--color-isabelline);
+}
+
+p.section-home__content-heading {
+    font-size: 3.5rem;
+}
+p.section-home__content-text {
+    font-size: 1.8rem;
+}
+/* SECTION HOME ENDS HERE <-- */
+
+/* SECTION ABOUT STARTS HERE --> */
+.section-about {
+    background: var(--color-isabelline);
+    color: var(--color-eerieBlack);
+}
+
+.section-about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 80px;
+}
+
+.section-about__heading p {
+    font-family: var(--font-family-accent);
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.section-about__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.section-about__blocks .block-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    padding: 20px;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px;
+}
+
+.block-content h3 {
+    font-family: var(--font-family-default);
+    font-size: 1.1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.block-content p {
+    font-family: var(--font-family-default);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.block-button {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.block-button button {
+    font-family: var(--font-family-default);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.block-button button:hover {
+    background: var(--color-sandyBrown);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.block-button button:active {
+    transform: scale(0.96);
+    background: var(--color-sandyBrown);
+    color: var(--color-isabelline);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+/* SECTION ABOUT ENDS HERE <-- */
