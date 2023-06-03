@@ -17,7 +17,7 @@
 
 
     --font-family-default: 'Open Sans', sans-serif;
-    --font-family-accent: Artemis;
+    --font-family-accent: 'Josefin Sans';
 
     --max-width-desktop: 1920px;
     --max-width-tablet: 1024px;
@@ -52,7 +52,7 @@ body {
 }
 
 .destinations-wrapper {
-    height: 60%;
+    height: 400px;
     width: 80%;
     margin: auto;
     display: flex;
@@ -60,7 +60,6 @@ body {
 
 .destinations-textbox {
     width: 50%;
-    height: 100%;
     color: var(--color-isabelline);
     background-color: rgba(27, 32, 24, 0.6);
     box-shadow: 5px 5px 20px black;
@@ -68,6 +67,9 @@ body {
 .destinations-textbox h1 {
     text-align: center;
     padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 100;
 }
 .destinations-textbox p {
     padding-top: 30px;
@@ -87,7 +89,7 @@ body {
 .destinations-moto p {
     font-size: xx-large;
     color: var(--color-isabelline);
-    
+    font-weight: 100;
 }
 
 
@@ -169,28 +171,38 @@ body {
 
 footer {
   color: var(--color-isabelline);
-  height: 40vh;
+  height:  100%;
   width: 100%;
   background-color: var(--color-eerieBlack);
   justify-content: center;
   display: flex;
 }
 
-footer p {
-    margin: 0;
-}
-
 .footer-wrapper {
     width: 80%;
     height: 100%;
     display: flex;
+    padding-bottom: 20px;
+}
+
+.footer-wrapper h1 {
+    font-weight: 100;
+    font-size: 1.4rem;
+    padding-bottom: 15px;
+}
+
+.footer-wrapper p {
+    font-family: var(--font-family-default);
+    font-weight: 60;
+    padding-bottom: 10px;
+    margin: 0;
 }
 
 .footer-newsletters {
     display: flex;
     flex-direction: column;
     width: 40%;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .footer-newsletters input {
@@ -210,7 +222,7 @@ footer p {
 .footer-navigation {
     padding-left: 3%;
     width: 15%;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 .footer-navigation a {
     text-decoration: none;
@@ -219,22 +231,11 @@ footer p {
 .footer-contacts {
     padding-left: 3%;
     width: 25%;
-    padding-top: 60px;
+    padding-top: 50px;
 }
 
 .footer-contacts svg {
     padding-right: 5px;
-}
-
-.footer-wrapper h1 {
-    font-size: 1.4rem;
-    padding-bottom: 15px;
-}
-
-.footer-wrapper p {
-    font-family: var(--font-family-default);
-    font-weight: 60;
-    padding-bottom: 10px;
 }
 
 .footer-logo {
@@ -246,8 +247,7 @@ footer p {
 .footer-logo img {
     width: 150px;
 }
-
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1100px) {
     .section-destinations {
         height: 100%;
     }
@@ -268,7 +268,10 @@ footer p {
         width: 80%;
         padding-left: 0;
     }
+}
 
+
+@media only screen and (max-width: 720px) {
     .section-tips {
         flex-direction: column;
         position: static;
