@@ -23,15 +23,8 @@
     --max-width-mobile: 720px;
 }
 
-/* to use dynamic value
-.element {
-    background: var(--color-eerieBlack);
-  }
-*/
-
 body {
     margin: 0;
-    font-family: var(--font-family-accent);
 }
 
 .section-destinations,
@@ -341,9 +334,9 @@ footer {
 .header-wrapper {
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
-    /* background: var(--color-drabDarkBrown); */
+    background: var(--color-drabDarkBrown);
 }
 
 .top-menu {
@@ -357,7 +350,6 @@ footer {
 }
 
 .top-menu .logo {
-    /* height: 50px; */
     width: 150px;
 }
 
@@ -365,9 +357,9 @@ footer {
     font-family: var(--font-family-accent);
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--color-sandyBrown);
+    color: var(--color-isabelline);
     padding: 10px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .top-menu nav a:hover,
