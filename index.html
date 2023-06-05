@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-wrapper">
-            <div class="top-menu">
-                <a href="#home" class="logo">
-                    <img src="./assets/icons/LogoEcoLiving.svg" alt="logo">
-                </a>
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="">Destinations</a>
-                    <a href="">Tips</a>
-                </nav>
-            </div>
+    <header class="header-wrapper">
+        <div class="top-menu">
+            <a href="#home" class="logo">
+                <img src="./assets/icons/LogoEcoLiving.svg" alt="logo">
+            </a>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#tips">Tips</a>
+                <a href="#contacts">Contacts</a>
+            </nav>
         </div>
     </header>
-    <section id="home" class="section-home">
+    <div class="first-position" id="home"></div>
+    <section class="section-home">
         <video autoplay muted loop class="section-home__video">
             <source src="./assets/videos/pexels-taryn-elliott-6922959-3840x2160-25fps.mp4" type="video/mp4">
         </video>
@@ -31,8 +31,9 @@
             <p class="section-home__content-heading">Eco Friendly traveling is<br> a <b>sustainable exploration</b></p>
             <p class="section-home__content-text">A way of exploring the world, leaving only footprints of gratitude and taking only memories of wonder.</p>
         </div>
+        <div class="position" id="about"></div>
     </section>
-    <section id="about" class="section-about">
+    <section class="section-about">
         <div class="section-about__wrapper">
             <div class="section-about__heading">
                 <p><b>Key principles</b><br> of Eco Friendly traveling</p> 
@@ -104,8 +105,9 @@
                 </div>
             </div>
         </div>
+        <div class="position" id="destinations"></div>
     </section>
-    <section id="destinations" class="section-destinations">
+    <section class="section-destinations">
         <div class="destinations-wrapper">
             <div class="destinations-textbox">
                 <h1>HOW TO CHOOSE DESTINATION?</h1>
@@ -115,30 +117,31 @@
                 <p>IT'S NOT ABOUT DESTINATION,<br> IT'S ABOUT JORNEY</p>
             </div>
         </div>
+        <div class="position" id="tips"></div>
     </section>
-    <section id="tips" class="section-tips">
+    <section class="section-tips">
       <div class="tips-text text-dish">
-        <h1>TOOLS</h1>
-        <p>Care about product's ingredients, the way products are produced, and the manner they are used. In order to find best eco-friendly, travel-size products, select products which meet rigorous criteria and create one of a kind self-care travel kits. Eco-friendly toothbrushes are made from sustainably sourced materials.</p>
-    </div>
+            <h1>TOOLS</h1>
+            <p>Care about product's ingredients, the way products are produced, and the manner they are used. In order to find best eco-friendly, travel-size products, select products which meet rigorous criteria and create one of a kind self-care travel kits. Eco-friendly toothbrushes are made from sustainably sourced materials.</p>
+        </div>
       <img
         class="img-dish"
         src="https://images.pexels.com/photos/6861147/pexels-photo-6861147.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
       <div class="tips-text text-brush">
-        <h1>TRAVEL KITS</h1>
-        <p>Care about product's ingredients, the way products are produced, and the manner they are used. In order to find best eco-friendly, travel-size products, select products which meet rigorous criteria and create one of a kind self-care travel kits. Eco-friendly toothbrushes are made from sustainably sourced materials.</p></div>
+            <h1>TRAVEL KITS</h1>
+            <p>Care about product's ingredients, the way products are produced, and the manner they are used. In order to find best eco-friendly, travel-size products, select products which meet rigorous criteria and create one of a kind self-care travel kits. Eco-friendly toothbrushes are made from sustainably sourced materials.</p></div>
       <img
         class="img-brush"
         src="https://images.pexels.com/photos/6861146/pexels-photo-6861146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
       <div class="tips-text text-food">
-        <h1>FOOD</h1>
-        <p>Sustainable Diets are those diets with low environmental impacts that contribute to food and nutrition security and to healthy life for present and future generations. Sustainable diets are protective and respectful of biodiversity and ecosystems, accessible, economically fair and affordable; nutritionally adequate, safe and healthy; while optimizing natural and human resources.</p>
+            <h1>FOOD</h1>
+            <p>Sustainable Diets are those diets with low environmental impacts that contribute to food and nutrition security and to healthy life for present and future generations. Sustainable diets are protective and respectful of biodiversity and ecosystems, accessible, economically fair and affordable; nutritionally adequate, safe and healthy; while optimizing natural and human resources.</p>
       </div>
       <img
         class="img-food"
         src="https://images.pexels.com/photos/6861150/pexels-photo-6861150.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"/>
     </section>
-    <footer>
+    <footer id="contacts">
       <div class="footer-wrapper">
         <div class="footer-newsletters">
           <h1>SIGN UP FOR NEWS</h1>
@@ -155,7 +158,7 @@
           <a href="#tips"><p>Tips</p></a>
         </div>
         <div class="footer-contacts">
-          <h1>CONTUCT US</h1>
+          <h1>CONTACT US</h1>
           <p>Eco Friendly Travel</p>
           <p>
             <svg
